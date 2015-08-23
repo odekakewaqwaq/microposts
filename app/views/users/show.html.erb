@@ -2,3 +2,10 @@
   <%= gravatar_for @user %>
   <%= @user.name %>
 </h1>
+
+<div id="profile">
+  <p><%= @user.email %></p>
+  <p><%= @user.location %></p>
+  <p><%= @user.profile %></p>
+ <%= link_to "edit profile" , edit_user_path , class: "btn btn-large btn-primary"%>
+  </div>
